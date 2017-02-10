@@ -82,6 +82,7 @@ public class index extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void menuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuActionPerformed
@@ -135,7 +136,7 @@ public class index extends javax.swing.JFrame {
         {
             this.setVisible(false);
             JOptionPane.showMessageDialog(null,"Saldo Anda saat ini sebesar : " + tab); //informasi saldo
-            z=JOptionPane.showConfirmDialog(null,"Melanjutkan transaksi lain ?","ATM BNI SYARIAH-BOJONEGORO",
+            z=JOptionPane.showConfirmDialog(null,"Melanjutkan transaksi lain ?","ATM BANK IPUL - ALEPPO",
                 JOptionPane.YES_NO_OPTION, 3); //konfirmasi transaksi lain
             if (z==0)
             {
@@ -143,7 +144,7 @@ public class index extends javax.swing.JFrame {
             }
             else
             {
-                JOptionPane.showMessageDialog(null,"Terimakasih telah menggunakan ATM BNI SYARIAH - BOJONEGORO, ambil kartu ATM Anda.");
+                JOptionPane.showMessageDialog(null,"Terimakasih telah menggunakan ATM BANK IPUL - ALEPPO, ambil kartu ATM Anda.");
                 System.exit(0);
             }
         }
@@ -155,7 +156,7 @@ public class index extends javax.swing.JFrame {
             setor hasil = new setor();
             hasil.menabung(tab, s);
             tab =hasil.getsaldo();
-            z=JOptionPane.showConfirmDialog(null,"Melanjutkan transaksi lain ?","ATM BNI SYARIAH-BOJONEGORO",
+            z=JOptionPane.showConfirmDialog(null,"Melanjutkan transaksi lain ?","ATM BANK IPUL -ALEPPO",
                 JOptionPane.YES_NO_OPTION, 3); //konfirmasi transaksi lain
             if (z==0)
             {
@@ -163,7 +164,7 @@ public class index extends javax.swing.JFrame {
             }
             else
             {
-                JOptionPane.showMessageDialog(null,"Terimakasih telah menggunakan ATM BNI SYARIAH - BOJONEGORO, ambil kartu ATM Anda.");
+                JOptionPane.showMessageDialog(null,"Terimakasih telah menggunakan ATM BANK IPUL - ALEPPO, ambil kartu ATM Anda.");
                 System.exit(0);
             }
         }
@@ -175,7 +176,7 @@ public class index extends javax.swing.JFrame {
             tarik mengambil = new tarik();
             mengambil.ambil(tab,t);
             tab =mengambil.getsaldo();
-            z=JOptionPane.showConfirmDialog(null,"Melanjutkan transaksi lain?","ATM BNI SYARIAH-BOJONEGORO",
+            z=JOptionPane.showConfirmDialog(null,"Melanjutkan transaksi lain?","ATM BANK IPUL - ALEPPO",
                 JOptionPane.YES_NO_OPTION, 3); //konfirmasi transaksi lain
             if (z==0)
             {
@@ -183,23 +184,14 @@ public class index extends javax.swing.JFrame {
             }
             else
             {
-                JOptionPane.showMessageDialog(null,"Terimakasih telah menggunakan ATM BNI SYARIAH - BOJONEGORO, ambil kartu ATM Anda.");
+                JOptionPane.showMessageDialog(null,"Terimakasih telah menggunakan ATM BANK IPUL - ALEPPO, ambil kartu ATM Anda.");
                 System.exit(0);
             }
         }
         else if (menu.getSelectedItem().equals("Petunjuk"))
         {
-            z=JOptionPane.showConfirmDialog(null,"Cara Penggunaan Aplikasi\n[1] Masukkan PIN dengan benar\n[2] Bertransaksilah dengan benar sesuai pilihan\n[3] Gunakan Uang sesuai kebutuhan dan rajinlah menabung\n ","INFO",
-                JOptionPane.YES_NO_OPTION, 3); //konfirmasi transaksi lain
-            if (z==0)
-            {
-                this.setVisible(true);
-            }
-            else
-            {
-                JOptionPane.showMessageDialog(null,"Terimakasih telah menggunakan ATM BNI SYARIAH - BOJONEGORO, ambil kartu ATM Anda.");
-                System.exit(0);
-            }
+           JOptionPane.showMessageDialog(null,"Cara Penggunaan Aplikasi\n[1] Masukkan PIN dengan benar\n[2] Bertransaksilah dengan benar sesuai pilihan\n[3] Gunakan Uang sesuai kebutuhan dan rajinlah menabung");
+            
         }
         else if (menu.getSelectedItem().equals("Keluar"))
         {
